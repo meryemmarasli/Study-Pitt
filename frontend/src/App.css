@@ -1,38 +1,86 @@
 .App {
-  text-align: center;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for the banner with stacked header */
+.banner {
+  background-color: #182854; /* Deep navy blue */
+  color: #9A936B; /* Muted olive tone for text */
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Darker background for readability */
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.intro-line {
+  margin: 15px 0;
+  color: #ffffff; /* Text color */
+}
+
+h1.intro-line {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+h2.intro-line {
+  font-size: 2rem;
+}
+
+h3.intro-line {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+
+/*Map info*/
+.map {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+
+.scrollableContainer {
+  overflow: auto;
+  max-height: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-side {
+  flex-basis: 50%;
+}
+
+.map-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.map-list {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.explore-title {
+  color: #182854;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
